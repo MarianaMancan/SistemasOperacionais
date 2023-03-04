@@ -1,0 +1,58 @@
+Introdução ao Shell Script
+
+identificacao do shell 
+root@debian:~# - # identifica o usuario root, que é o administrador do sistema
+root@debian:~# - @ identifica o nome do computador
+root@debian:~# - :~# identifica o diretorio atual
+root@debian:~$ - $ identifica o usuario comum
+
+---
+
+identificacao dos itens
+inicia com:
+d = diretorio
+f = arquivo
+l = link simbolico
+- = arquivo normal
+
+---
+
+permissao de arquivos e diretorios
+r - leitura
+w - escrita
+x - execucao
+sempre de 3 em 3 caracteres, excluindo o primeiro que é o tipo do arquivo/diretorio
+
+ex:
+-rw-r--r-- = arquivo normal com permissao de leitura e escrita para o dono e leitura para o grupo e outros
+
+3 primeiros seriam do dono/criador
+3 seguintes do grupo
+3 ultimos de outros
+
+drwx------ = diretorio com permissao de leitura, escrita e execucao para o dono e leitura para o grupo e outros
+
+Comandos chmod
+|r|w|x|
+|0|0|0| - nenhuma permissao - 0
+|0|0|1| - execucao - 1
+|0|1|0| - escrita - 2
+|0|1|1| - escrita e execucao - 3
+|1|0|0| - leitura - 4
+|1|0|1| - leitura e execucao - 5
+|1|1|0| - leitura e escrita - 6
+|1|1|1| - leitura, escrita e execucao - 7
+
+Conjunto 777 permissão total.
+
+---
+
+Comandos simples para navegação no terminal linux
+cd - altera o diretorio atual (change directory)
+ls - listagem de arquivos e diretorios (list)
+ls -l - listagem detalhada de arquivos e diretorios (list long)
+ls -a - listagem de arquivos e diretorios incluindo os ocultos (list all)
+ls --color - listagem de arquivos e diretorios com cores (list color)
+pwd - mostra o diretorio atual (present working directory)
+mkdir - cria um diretorio (make directory)
+touch - cria um arquivo vazio (touch)

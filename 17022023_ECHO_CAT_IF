@@ -1,0 +1,22 @@
+STDIN E STDOUT
+ECHO - SEMELHANTE AO PRINTF
+ECHO FACTEC > faculdades.txt - MODIFICA SAIDA PADRAO PARA O DISCO (cria um arquivo)
+cat - exibe o conteudo de um arquivo
+> - redireciona
+>> redireciona e concatena
+grep - comando para buscar informação
+grep A faculdades.txt - buscas todas as linhas que há ocorrencia da letra A
+^ REGEX
+grep --color ^F faculdades.txt - busca todas as faculdades que começam com F
+greep -- color o$ faculdades.txt - buscar arquivos que terminem com a letra O
+date && echo FATEC - faça o segundo comando se o primeiro deu certo
+date || echo FATEC - faça o segundo comando se o primeiro nao deu certo
+data : echo FATEC - faça o segundo comando independente se der ou nao certo o primeiro comando
+grep A faculdades.txt > /dev/null - faz uma busca no arquivo sem sujar a tela
+/dev/null - buraco negro
+cat /dev/zero e joga no HD para apagar seus dados
+
+Variaveis ambiente
+$? se o comando dar certo retorna 0
+[ $? -eq 0] - se for igual a 0 sucesso
+[ $? -eq 0] && echo OK || echo NOK- SE O COMANDO ANTERIOR DAR CERTO EXIBA OK SE NAO EXIBA NAO OK
